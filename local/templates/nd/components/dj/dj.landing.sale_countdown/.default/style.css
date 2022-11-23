@@ -1,0 +1,51 @@
+.sale-countdown {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding: 30em 30em 51em 30em;
+    /* line-height: 1.7em; */
+    font-size: 1px;
+}
+
+.sale-countdown__comment {
+    font-weight: 800;
+    font-size: 18em;
+}
+
+.sale-countdown__left {
+    font-weight: 800;
+    font-size: 29em;
+    line-height: 1em;
+}
+
+.sale-countdown__clock {
+    display: flex;
+    gap: 6em;
+    margin-top: 7em;
+    justify-content: center;
+}
+
+.sale-countdown__digit {
+    background-color: white;
+    color: var(--fenix-main-color);
+    border-radius: .13em;
+    font-weight: 700;
+    font-size: 29em;
+    min-width: 1.48em;
+    line-height: 1.48em;
+    margin-bottom: .34em;
+}
+
+
+.sale-countdown__unit {
+    font-weight: 800;
+    font-size: 13em;
+    line-height: 1.23em;
+}
+
+@media (max-width: 1080px) {
+    .sale-countdown {
+        font-size: .13rem;
+    }
+}
+

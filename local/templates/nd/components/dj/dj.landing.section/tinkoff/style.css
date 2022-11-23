@@ -1,0 +1,237 @@
+.installment{
+    background-color: var(--tinkoff-yellow);
+    padding: 95px 0;
+}
+
+.installment__container {
+    display: flex;
+    font-family: 'montserrat', sans-serif;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 31px;
+    /* grid-template-columns: min-content min-content 1fr; */
+}
+.installment__time {
+    padding: 15px 30px 15px 35px;
+    font-size: 129px;
+    white-space: nowrap;
+    font-weight: 800;
+    background-color: var(--fenix-dark-color);
+    color: white;
+    /* margin-left: 14px; */
+    border-radius: 15px;
+    letter-spacing: -10px;
+}
+
+.installment__time i {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 27px;
+    letter-spacing: normal;
+}
+
+.installment__logo{
+    width: 171px;
+    height: 122px;
+    background-size: contain;
+    background-position: center;
+}
+
+.installment__title {
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 800;
+    color: var(--fenix-dark-color);
+}
+
+.installment__title-comment {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.installment__form {
+    background-color: var(--fenix-dark-color);
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    padding: 38px 37px;
+    gap: 17px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.installment__politics {
+    width: 100%;
+    font-size: 11px;
+    color: white;
+    text-align: right;
+}
+
+.installment__politics a{
+    color: white;
+    text-decoration: underline;
+}
+
+.installment__form-input, .installment__form-button {
+    width: 189px;
+    border-radius: 5px;
+    border: 0;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.installment__form-input, .installment__form-input::placeholder {
+    background-color: white;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--fenix-main-color-20);
+    flex-grow: 2;
+}
+
+.installment__form-input:focus{
+    outline: none;
+}
+
+.installment__form-button {
+    color: white;
+    background-color: rgba(64, 175, 95, 1);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.installment__action {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--fenix-dark-color);
+    flex-basis: 230px;
+}
+
+.installment__description{
+    font-size: 12px;
+    line-height: 18px;
+    flex-basis: 470px;
+    padding-top: 7px;
+    color: var(--fenix-dark-color);
+    margin-left: 16px;
+}
+
+.installment__price{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 800;
+    padding-top: 7px;
+    color: var(--fenix-dark-color);
+    margin-left: 149px;
+}
+
+@media (max-width: 1020px){
+    .installment{
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .installment__container {
+        padding: 10rem 5rem 17rem 5rem;
+        row-gap: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .installment__time {
+        padding: 3rem 10rem 3rem 16rem;
+        font-size: 17rem;
+        order: 3;
+        border-radius: 2rem;
+        letter-spacing: 0;
+        width: 100%;
+        margin-top: 10rem;
+    }
+
+    .installment__time i {
+        font-size: 3.7rem;
+    }
+
+
+    .installment__logo{
+        width: 36.3rem;
+        height: 24.7rem;
+        order: 2;
+    }
+
+    .installment__title {
+        font-size: 5rem;
+        line-height: 7.5rem;
+        order: 1;
+        width: 50rem;
+    }
+
+    .installment__title:first-line {
+        font-size: 7rem;
+    }
+
+    .installment__form {
+        border-radius: 2rem;
+        padding: 9.5rem 5rem;
+        gap: 10rem;
+        order: 4;
+        flex-flow: row wrap;
+        margin-top: 4.8rem;
+        justify-content: space-between;
+    }
+
+    .installment__form-input, .installment__form-button {
+        width: 100%;
+        border-radius: .8rem;
+        height: 11rem;
+    }
+
+    .installment__form-input, .installment__form-input::placeholder {
+        padding: 0 4rem;
+        font-size: 5rem;
+    }
+
+    .installment__form-button {
+        font-size: 3.2rem;
+        width: 40%;
+        order: 1;
+    }
+
+    .installment__politics {
+        width: 35%;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .installment__action {
+        order: 5;
+        font-size: 5.5rem;
+        flex-basis: unset;
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+    .installment__description{
+        font-size: 2rem;
+        line-height: 2.4rem;
+        padding: 0;
+        margin: 3rem 0 0 0;
+        order: 7;
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .installment__price{
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        flex-basis: unset;
+        padding-top: 0;
+        margin: .3rem 0 0 0;
+        order: 6;
+        width: 100%;
+    }
+}

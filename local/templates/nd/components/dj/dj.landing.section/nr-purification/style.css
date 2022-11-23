@@ -1,0 +1,145 @@
+.purification {
+    background-color: var(--fenix-grey-color);
+}
+
+.purification__container {
+    padding: 86px 0 46px 0;
+    display: grid;
+    grid-template-columns: 307px 1fr;
+    row-gap: 48px;
+}
+
+.purification__image-wrapper {
+    background-color: white;
+    width: 201px;
+    height: 201px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.purification_image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.purification__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.purification__text {
+    font-size: 30px;
+    color: var(--fenix-main-color);
+}
+
+.purification__calc {
+    font-weight: 400;
+    line-height: 50px;
+    margin-right: 100px;
+}
+
+.purification__result {
+    font-weight: 800;
+    line-height: 35px;
+}
+
+.purification__images-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 206px 1fr 206px;
+    position: relative;
+    right: 20px;
+    padding-top: 15px;
+}
+
+.purification__image-wrapper--left {
+    grid-column: 1;
+
+}
+
+.purification__image-main-wrapper {
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    position: relative;
+    left: 40px;
+    width: 375px;
+}
+
+.purification__image-wrapper--right {
+    grid-column: 3;
+}
+
+@media (max-width: 1080px) {
+
+    .purification__container {
+        padding: 17.3rem 5.3rem;
+        display: block;
+    }
+
+    .purification__image-wrapper {
+        width: 27rem;
+        height: 27rem;
+        border-radius: 13.5rem;
+        position: relative;
+        /* z-index: 0; */
+    }
+
+    .purification__text {
+        font-size: 4.4rem;
+        margin-top: 3.7rem;
+    }
+
+    .purification__calc {
+        font-weight: inherit;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .purification__result {
+        font-weight: inherit;
+        line-height: normal;
+    }
+
+    .purification__images-wrapper {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 27rem;
+        margin-top: 5.7rem;
+        gap: 1.5rem;
+        right: 0;
+        padding: 0;
+    }
+
+    .purification__images-wrapper img{
+        width: 100%;
+        height: auto;
+    }
+
+    .purification__image-wrapper--left {
+        grid-column: 2;
+
+    }
+
+    .purification__image-main-wrapper {
+        grid-column: 1;
+        grid-row: span 4;
+        position: relative;
+        left: 0;
+        top: 8rem;
+        width: 130%;
+        overflow: hidden;
+    }
+
+    .purification__image-main-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    .purification__image-wrapper--right {
+        grid-column: 2;
+    }
+
+
+
+}

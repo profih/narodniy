@@ -1,0 +1,118 @@
+.volumes__container {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 410px min-content min-content;
+    grid-auto-flow: column;
+}
+
+.volumes__features, .volumes__title {
+    grid-column: 1;
+}
+
+.volumes__image-container {
+    grid-row: 1/3;
+    text-align: center;
+    align-self: end;
+}
+
+.volumes__bp {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-decoration: line-through;
+    text-decoration-thickness: from-font;
+    color: var(--fenix-main-color);
+}
+
+.volumes__p {
+    font-size: 34px;
+    line-height: 26px;
+    color: var(--fenix-main-color);
+}
+
+.volumes__feature.fenix-bullet {
+    align-items: flex-start;
+    width: 240px;
+    margin-bottom: 28px;
+    line-height: 28px;
+}
+
+.volumes__features {
+    padding-left: 69px;
+}
+
+.volumes__image.volume-20 {
+    width: 301px;
+    height: 468px;
+}
+
+.volumes__image.volume-30 {
+    width: 297px;
+    height: 547px;
+}
+
+.volumes__text {
+    padding-left: 50px;
+}
+
+@media (max-width: 1080px) {
+    .volumes__container {
+        padding: 22.5rem 4.2rem 27.2rem 4.2rem;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+    }
+
+    .volumes__title {
+        grid-column: 1/3;
+        grid-row: 1;
+        margin-bottom: 4.4rem;
+    }
+
+    .volumes__features {
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+
+    .volumes__image-container {
+        grid-row: 2;
+        /* grid-column: span 1; */
+        font-size: 4rem;
+    }
+
+    .volumes__bp {
+        font-size: 2.9rem;
+        line-height: normal;
+    }
+
+    .volumes__p {
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+    }
+
+    .volumes__feature.fenix-bullet {
+        width: auto;
+        margin-bottom: 4.5rem;
+        line-height: normal;
+        font-size: 3.4rem;
+    }
+
+    .volumes__features {
+        padding: 0;
+        margin-top: 11.5rem;
+        font-size: 4rem;
+    }
+
+    .volumes__image.volume-20 {
+        width: 40.1rem;
+        height: 60.5rem;
+    }
+
+    .volumes__image.volume-30 {
+        width: 39.6rem;
+        height: 72.9rem;
+    }
+
+    .volumes__text {
+        padding-left: 6rem;
+    }
+}

@@ -1,0 +1,145 @@
+User-Agent: *
+
+Disallow: /*?a=support
+Disallow: /*?stat-id=*
+Disallow: /*?action=*
+Disallow: /*?blog=*
+Disallow: /*?bx_sender_conversion_id=*
+Disallow: /*?bxajaxid=*
+Disallow: /*?cid=*
+Disallow: /*?form_text_1=*
+Disallow: /*?lang=*
+Disallow: /*?list_type=*
+Disallow: /*?oid=*
+Disallow: /*?print=*
+Disallow: /*?question=*
+Disallow: /*?review_id=*
+Disallow: /*?rs=*
+Disallow: /*?utm_source=*
+Disallow: /*?view_result=*
+Disallow: /*ADD_TO_COMPARE_LIST
+Disallow: /*auth=*
+Disallow: /*back_url_admin=*
+Disallow: /*back_url=*
+Disallow: /*backurl=*
+Disallow: /*bitrix_include_areas=*
+Disallow: /*change_password=*
+Disallow: /*clear_cache_session=*
+Disallow: /*forgot_password=*
+Disallow: /*index*.php$
+Disallow: /*login=*
+Disallow: /*logout=*
+Disallow: /*nav-*
+Disallow: /*ORDER_BY
+Disallow: /*PAGEN
+Disallow: /*print_course=*
+Disallow: /*register=*
+Disallow: /*show_include_exec_time=*
+Disallow: /*show_page_exec_time=*
+Disallow: /*show_sql_stat=*
+Disallow: /?_sm_vck=*
+Disallow: /?_ym_status-check=*
+Disallow: /?clear_cache=Y
+Disallow: /?media-test-tag=*
+Disallow: /?page=support
+Disallow: /?secure=*
+Disallow: /?spell=*
+Disallow: /?utm_reqid=*
+Disallow: /?year=*
+Disallow: /1c.php
+Disallow: /404.php
+Disallow: /500.html
+Disallow: /ajax/
+Disallow: /auth/
+Disallow: /b2b/
+Disallow: /basket/
+Disallow: /bfd/
+Disallow: /bitrix/*
+Disallow: /compare/
+Disallow: /contacts/stores/
+Disallow: /content/news/
+Disallow: /css/
+Disallow: /desktop_app/
+Disallow: /form/*
+Disallow: /gradebook.php
+Disallow: /help/
+Disallow: /iblock/
+Disallow: /include/
+Disallow: /info/
+Disallow: /learning/
+Disallow: /local/
+Disallow: /login/
+Disallow: /make/
+Disallow: /news/
+Disallow: /order/
+Disallow: /personal/
+Disallow: /rss/
+Disallow: /sale/
+Disallow: /search.php?q=*
+Disallow: /test/
+Disallow: /upload/
+Disallow: /webstat/
+Disallow: /?*
+Disallow: /*/filter/clear/apply/
+Disallow: /?_ym_status-check=*
+Disallow: /?media-test-tag=*
+
+Allow: /*.css
+Allow: /*.js
+Allow: /bitrix/css/
+Allow: /bitrix/images/
+Allow: /bitrix/js/
+Allow: /bitrix/panel/
+Allow: /bitrix/templates/
+Allow: /local/components/
+Allow: /local/templates/
+Allow: /upload/iblock/
+Allow: /upload/medialibrary/
+Allow: /upload/resize_cache/iblock/
+Allow: /upload/resize_cache/main/
+Allow: /upload/resize_cache/medialibrary/
+Allow: /filter/*
+Allow: */apply/
+
+Clean-Param: block /
+Clean-Param: display /
+Clean-Param: how /
+Clean-Param: offer /
+Clean-Param: oid /
+Clean-Param: order /
+Clean-Param: PRICE /
+Clean-Param: q /
+Clean-Param: r /
+Clean-Param: RID /
+Clean-Param: s /
+Clean-Param: section_id /
+Clean-Param: sort /
+Clean-Param: clear_cache /
+Clean-Param: region /
+Clean-Param: ysclid /
+Clean-Param: rs_stat /
+Clean-Param: _ym_debug /
+Clean-Param: _sm_nck /
+Clean-Param: hhtmFrom /
+Clean-Param: mobileApp /
+Clean-Param: spm /
+Clean-Param: yadclid /
+Clean-Param: where /
+Clean-Param: del_url /
+Clean-Param: from /
+Clean-Param: utm /
+Clean-Param: amp /
+Clean-Param: type /
+Clean-Param: cm_id /
+Clean-Param: back /
+Clean-Param: u /
+Clean-Param: support /
+Clean-Param: route /
+Clean-Param: checkout /
+Clean-Param: catalog_order /
+Clean-Param: etext /
+Clean-Param: desc /
+Clean-Param: asc /
+Clean-param: etext /
+
+Sitemap: https://feniks-narodnyi.ru/sitemap.xml

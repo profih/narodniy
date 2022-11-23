@@ -1,0 +1,119 @@
+.modern__container {
+    padding: 23px 0 83px 0;
+    display: grid;
+    grid-template-columns: 1fr 260px 250px min-content;
+    justify-content: center;
+    align-items: flex-end;
+    grid-auto-flow: column;
+}
+
+.modern__title {
+    grid-column: 1;
+}
+
+.modern__features-1 {
+    grid-column: 1;
+    width: 273px;
+    margin-top: 48px;
+    margin-bottom: 41px;
+}
+
+.modern__features-2 {
+    grid-column: 4;
+    grid-row: 2;
+    position: relative;
+    bottom: 140px;
+    right: 60px;
+}
+
+.modern__features-1 .modern__feature,
+.modern__features-2 .modern__feature {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.modern__comment {
+    grid-column: 1;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 39px;
+    color: var(--fenix-main-color);
+}
+
+.modern__narod {
+    height: 588px;
+    width: 260px;
+    grid-column: 2;
+    grid-row: span 3;
+}
+
+.modern__narod-dioptr {
+    height: 628px;
+    width: 250px;
+    grid-column: 3;
+    grid-row: span 3;
+}
+
+@media (max-width: 1080px) {
+    .modern__container {
+        padding: 153px 35px 145px 35px;
+        grid-template-columns: min-content min-content min-content;
+    }
+
+    .modern__title {
+        grid-column: 1/4;
+    }
+
+    .modern__features-1 {
+        grid-column: 1/4;
+        width: auto;
+        margin: 4rem 0 1rem 0;
+    }
+
+    .modern__features-2 {
+        grid-column: 3;
+        grid-row: 3;
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 27rem;
+    }
+
+    .modern__features-1 .modern__feature,
+    .modern__features-2 .modern__feature {
+        font-size: 4rem;
+        line-height: normal;
+        margin-bottom: 3.7rem;
+    }
+
+    .modern__comment {
+        grid-column: 1/4;
+        font-size: 6.2rem;
+        line-height: normal;
+        width: auto;
+        margin-top: 8rem;
+    }
+
+    .modern__narod {
+        height: 74.8rem;
+        width: 32.9rem;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .modern__narod-dioptr {
+        height: 83.6rem;
+        width: 33.2rem;
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .modern__features-2 .modern__feature {
+        position: absolute;
+        top: -58rem;
+        left: -8rem;
+    }
+
+}

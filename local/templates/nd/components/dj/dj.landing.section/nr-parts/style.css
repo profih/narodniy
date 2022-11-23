@@ -1,0 +1,208 @@
+.parts__container {
+    display: grid;
+    grid-template-columns: 588px 1fr;
+    padding: 74px 0 46px 0;
+}
+
+.parts__title {
+    margin-bottom: 14px;
+    grid-column: 1;
+}
+
+.parts__comment {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 44px;
+    color: var(--fenix-main-color);
+    grid-column: 1;
+}
+
+.parts__package {
+    grid-column: 1;
+    list-style: none;
+    counter-reset: li;
+    padding: 0;
+    margin: 16px 0;
+}
+
+li.parts__item {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 69px;
+}
+
+li.parts__item:before {
+    counter-increment: li;
+    content: counter(li);
+    color: var(--fenix-main-color);
+    display: inline-block;
+    width: 1.6em;
+    font-weight: 800;
+    margin-left: -1em
+}
+
+.parts__images-wrapper {
+    grid-column: 2;
+    grid-row: span 3;
+}
+
+.parts__presents {
+    display: none;
+}
+
+.parts__images-wrapper {
+    position: relative;
+    font-size: 1px;
+}
+
+.parts__image-dist-wrapper {
+    position: absolute;
+    left: -20px;
+    top: -120px;
+}
+
+.parts__image-cube-wrapper {
+    position: absolute;
+    left: -45px;
+    top: 163px;
+}
+
+.parts__image-thermometer-wrapper {
+    position: absolute;
+    left: -35px;
+    top: 71px;
+}
+
+.parts__number {
+    background-color: var(--fenix-main-color);
+    color: white;
+    font-size: 20em;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    width: 1.4em;
+    left: 20px;
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.parts__image-dist {
+    width: 486em;
+    height: 371em;
+}
+
+.parts__image-cube {
+    width: 318em;
+    height: 331em;
+}
+.parts__image-thermometer {
+    width: 99em;
+    height: 104em;
+}
+
+
+.parts__number--1 {
+    left: 1em;
+    top: 8em;
+}
+
+.parts__number--2 {
+    left: 4em;
+    top: 14em;
+}
+
+.parts__number--3 {
+    left: 15em;
+    top: 14em;
+}
+
+.parts__number--4 {
+    left: 7em;
+    top: 2em;
+}
+
+.parts__number--5 {
+    left: 7em;
+    top: -1em;
+}
+
+.parts__number--6 {
+    left: 3em;
+    top: 2em;
+}
+
+.parts__number--7 {
+    left: 20em;
+    top: 10em;
+}
+
+.parts__number--8 {
+    left: 15em;
+    top: 6em;
+}
+
+.parts__number--9 {
+    left: 17em;
+    top: 9em;
+}
+
+.parts__number--10 {
+    left: 13em;
+    top: 1em;
+}
+
+.parts__number--11 {
+    left: 12em;
+    top: 9em;
+}
+
+
+@media (max-width: 1080px) {
+    .parts__container {
+        display: block;
+        padding: 20.2rem 0 0 5.9rem;
+    }
+
+    .parts__title {
+        margin-bottom: 1.7rem;
+    }
+
+    .parts__comment {
+        font-size: 4.4rem;
+        line-height: 5.9rem;
+
+    }
+
+    .parts__package {
+        margin: 0 0 7.9rem 0;
+    }
+
+    li.parts__item {
+        font-size: 4rem;
+        margin-bottom: 4.2rem;
+        margin-left: 4rem;
+    }
+
+
+    .parts__images-wrapper {
+        height: 57.8rem;
+        position: relative;
+        font-size: .115rem;
+    }
+
+    .parts__image-dist-wrapper {
+        top: 10rem;
+        left: 3rem;
+    }
+
+    .parts__image-cube-wrapper {
+        top: 10rem;
+        left: 54rem;
+    }
+
+    .parts__image-thermometer-wrapper {
+        top: 35rem;
+        left: 4rem;
+    }
+}
