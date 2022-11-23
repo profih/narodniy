@@ -20,8 +20,8 @@
             <div class="usage__point fenix-bullet">подключаем воду к нижним трубкам отвода</div>
             <div class="usage__point fenix-bullet">к верхним трубкам подключают отвод воды</div>
             <div class="usage__point fenix-bullet">включаем плиту (или ТЭН)</div>
-            <div class="usage__point fenix-bullet">пары проходят очистку через РПН тяжелые фракции кондексируются и оседают</div>
-            <div class="usage__point fenix-bullet">легки пары проходят дальше через сухопарник, который улучшают степень очистки.
+            <div class="usage__point fenix-bullet">пары проходят очистку через РПН, тяжелые фракции конденсируются и оседают</div>
+            <div class="usage__point fenix-bullet">легкие пары проходят дальше через сухопарник, которые улучшают степень очистки.
                 Здесь же
                 можно добавить ароматические добавки.
             </div>

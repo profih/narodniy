@@ -9,11 +9,12 @@
 /** @global CUser $USER */
 /** @global CMain $APPLICATION */
 ?>
+
 <section class="purification" id="purification">
     <div class="purification__container centered-container">
         <div class="purification__title st-font">Единственный аппарат с тройной степенью очистки</div>
         <div class="purification__text">
-            <span class="purification__calc">Сетка панченкова + Дефлегматор + Сухопарник</span>
+            <span class="purification__calc">Сетка Панченкова + Дефлегматор + Сухопарник</span>
             <span class="purification__result">= ТРОЙНАЯ очистка</span>
         </div>
         <div class="purification__images-wrapper">

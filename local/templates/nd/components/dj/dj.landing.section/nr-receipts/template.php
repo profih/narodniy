@@ -11,7 +11,7 @@
 ?>
 <section class="receipts" id="receipts">
     <div class="receipts__container centered-container">
-        <div class="receipts__title st-font">Элитные напитки пропали?<br> Ничего подобного!</div>
+        <div class="receipts__title st-font">Элитные напитки пропали?<br> Ничего страшного!</div>
         <div class="receipts__comment">Бурбон, виски, ром и многое другое - вы можете сделать сами, намного дешевле!
         </div>
         <div class="receipts__drinks">
@@ -32,7 +32,7 @@
                 <div class="receipts__receipt-title">Вода</div>
                 <div class="receipts__receipt-title">Сахар</div>
                 <div class="receipts__receipt-title">Дрожжи</div>
-                <div class="receipts__receipt-title">Тайный ингридиент</div>
+                <div class="receipts__receipt-title">Тайный ингредиент</div>
                 <div class="receipts__receipt-title">
                     Цена за 0,5 л
                 </div>

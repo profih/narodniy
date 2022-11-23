@@ -30,7 +30,7 @@
                 <div class="cube__detail-picture">
                     <img loading="lazy" src="<?=$arResult['IMAGES'][2]?>" alt="" class="cube__detail-img">
                 </div>
-                <div class="cube__detail-feature fenix-bullet">Кран крепится на нипель/муфту</div>
+                <div class="cube__detail-feature fenix-bullet">Кран крепится на ниппель/муфту</div>
             </div>
             <div class="cube__detail clapan">
                 <div class="cube__detail-picture">

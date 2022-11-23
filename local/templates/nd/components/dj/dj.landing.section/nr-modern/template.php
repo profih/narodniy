@@ -30,7 +30,7 @@
         <img src="<?=$arResult['IMAGES'][0]?>" alt="Народный без диоптра" class="modern__narod">
         <img src="<?=$arResult['IMAGES'][1]?>" alt="Народный с диоптром" class="modern__narod-dioptr">
         <div class="modern__features-2">
-            <div class="modern__feature fenix-bullet">Вечно можно наблюдать за одной вещью - как течет спирт внутри колонны=)</div>
+            <div class="modern__feature fenix-bullet">Бесконечно можно смотреть на три вещи: как горит огонь, как течёт вода и как поднимаются спиртовые пары</div>
         </div>
     </div>
 </section>

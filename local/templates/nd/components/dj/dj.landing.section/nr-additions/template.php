@@ -25,7 +25,7 @@
                         <span class="additions__item-bp"><?=$item['UF_BASE_PRICE_1']?>&nbspр</span><br>
                         <span class="additions__item-p"><b><?=$item['UF_PRICE_1C']?></b>&nbspр</span>
                     </div>
-                    <i class="additions__item-cart"></i>
+                    <div class="additions__item-cart">в корзину</div>
                     <div class="additions__item-quan">
                         <span class="additions__quan-dec" data-catalog-id="<?=$item["ID"]?>">-</span>
                         <input type="number" class="additions__quan-number" value="0">

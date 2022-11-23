@@ -17,7 +17,7 @@
             <div class="aroma__feature fenix-bullet">удобный сухопарник с аромакорзиной!</div>
             <div class="aroma__feature fenix-bullet">используйте травы, пряности или цедру для ароматизации конечного продукта</div>
             <div class="aroma__feature fenix-bullet">удобно засыпать во время перегонки</div>
-            <div class="aroma__feature fenix-bullet">удобная ручка на джин корзине</div>
+            <div class="aroma__feature fenix-bullet">удобная ручка на джин-корзине</div>
         </div>
         <div class="aroma__images-wrapper">
             <div class="aroma__image-wrapper aroma__image-neg">

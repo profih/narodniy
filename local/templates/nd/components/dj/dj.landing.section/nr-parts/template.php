@@ -11,7 +11,7 @@
 ?>
 <section class="parts" id="parts">
     <div class="parts__container centered-container">
-        <div class="parts__title st-font">Самая полная комплектация!</div>
+        <div class="parts__title st-font">Максимальная комплектация!</div>
         <div class="parts__comment">Ничего докупать не нужно!</div>
 
         <div class="parts__images-wrapper">
