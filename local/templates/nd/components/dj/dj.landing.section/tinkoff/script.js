@@ -8,6 +8,7 @@ $(document).ready(function () {
                 let error_msg = 'Введите телефон в верном формате'
                 showErrorMsg(phone, error_msg)
             } else {
+                ym(91301267,'reachGoal','zayavka_rassrochka')
                 sendMail('tinkoff', {'phone': phone.val(), 'name': name.val()})
 
             }

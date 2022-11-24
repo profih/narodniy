@@ -58,6 +58,8 @@ function sendMail(template, data) {
         data: mail_data,
         success: function (data) {
             hide("all")
+            ym(91301267,'reachGoal','zakaz')
+
             showThanksPopup()
         }
     });
