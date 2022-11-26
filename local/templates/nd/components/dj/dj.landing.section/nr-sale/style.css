@@ -88,6 +88,7 @@
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
+    z-index: 9999;
 }
 .sale__picture-wrapper {
     grid-row-start: 1;
@@ -113,7 +114,7 @@ img.sale__picture {
 
     .sale__container {
         grid-template-columns: min-content auto;
-        grid-template-rows: repeat(3, min-content) 49rem min-content;
+        grid-template-rows: repeat(3, min-content) 48.5rem min-content;
         padding: 8.5rem 0 8.5rem 4.4rem;
         column-gap: 0;
     }
@@ -162,10 +163,10 @@ img.sale__picture {
     }
 
     .sale__action {
-        font-size: 3.7rem;
-        width: 34.2rem;
-        height: 8.3rem;
-        border-radius: 4rem;
+        font-size: 4.4rem;
+        width: 39rem;
+        height: 13rem;
+        border-radius: 7rem;
         grid-row: 5;
         grid-column: 2;
         margin: 0;

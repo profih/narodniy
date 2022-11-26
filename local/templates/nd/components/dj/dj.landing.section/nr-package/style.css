@@ -61,7 +61,7 @@ img.package__item-image {
 
 @media (max-width: 1080px) {
     .package__container {
-        padding: 21rem 4.8rem 19.8rem 4.8rem;
+        padding: 15rem 4.8rem 15rem 4.8rem;
     }
 
     .package__title {
@@ -71,8 +71,10 @@ img.package__item-image {
 
     .package__comment {
         width: 72.5rem;
-        font-size: 4.4rem;
+        font-size: 5.4rem;
         line-height: normal;
+        font-style: italic;
+        font-weight: 400;
     }
 
     .package__wrapper {
@@ -90,13 +92,13 @@ img.package__item-image {
     }
 
     .package__item-title {
-        font-size: 3.7rem;
+        font-size: 4.4rem;
         line-height: normal;
         margin: 5.6rem 0 3.7rem 0;
     }
 
     .package__item-text {
-        font-size: 3.7rem;
+        font-size: 4rem;
         line-height: 6rem;
         margin: 0 auto 4.5rem auto;
         width: 38rem;

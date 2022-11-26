@@ -92,10 +92,17 @@
     display: flex;
     border-radius: 34px;
     height: 53px;
-    background-color: var(--fenix-main-color);
+    /* background-color: var(--fenix-main-color); */
     justify-content: center;
     align-items: center;
     margin-top: 22px;
+    background: linear-gradient(#9e79ed, #5f2bcd) #531cc9;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #c1abf3 #000000 #4d22a9;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #202020;
 }
 
 .order__title {
@@ -241,7 +248,7 @@ span.order__bp {
 
     .order__item-name {
         font-weight: 400;
-        font-size: 4rem;
+        font-size: 4.4rem;
         line-height: 5rem;
         grid-column: 1/3;
     }
@@ -253,7 +260,7 @@ span.order__bp {
     }
 
     .order__item-p {
-        font-size: 4rem;
+        font-size: 4.8rem;
         line-height: normal;
         justify-self: flex-start;
     }
@@ -274,12 +281,12 @@ span.order__bp {
 
     .order__action {
         grid-column: 1/3;
-        font-size: 4.5rem;
+        font-size: 6rem;
         line-height: 6rem;
-        width: 50rem;
-        border-radius: 5rem;
-        height: 10rem;
-        margin-top: 7rem;
+        width: 80rem;
+        border-radius: 7rem;
+        height: 14rem;
+        margin-top: 8rem;
         justify-self: center;
     }
 
@@ -288,12 +295,12 @@ span.order__bp {
     }
 
     span.order__bp {
-        font-size: 4.8rem;
-        line-height: 5rem;
+        font-size: 7rem;
+        line-height: 9rem;
     }
 
     .order__p {
-        font-size: 7rem;
+        font-size: 11rem;
         line-height: 9rem;
     }
 

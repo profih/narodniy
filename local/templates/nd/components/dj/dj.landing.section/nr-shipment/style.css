@@ -57,7 +57,7 @@
 @media (max-width: 1080px) {
 
     .shipment__container {
-        padding: 18.6rem 5.3rem;
+        padding: 17rem 5.3rem;
     }
 
     .shipment__wrapper {
@@ -73,7 +73,7 @@
 
     .shipment__russia, .shipment__msk {
         padding: 5.3rem 6.8rem;
-        font-size: 3.6rem;
+        font-size: 4.4rem;
         grid-column: span 2;
         line-height: 9rem;
         width: auto;
@@ -82,7 +82,7 @@
 
 
     .shipment__questions {
-        font-size: 3.6rem;
+        font-size: 4.4rem;
         line-height: 6rem;
         grid-column: 1;
         margin: 2rem 0 9rem 0;
@@ -90,7 +90,7 @@
     }
 
     .shipment__payment {
-        font-size: 3.6rem;
+        font-size: 4.4rem;
         line-height: 6rem;
         grid-column: 1;
         width: auto;

@@ -166,14 +166,14 @@ img.additions__item-image {
     }
 
     .additions__item-title {
-        font-size: 3.7rem;
+        font-size: 4rem;
         line-height: normal;
         margin: 5.6rem 0 3.7rem 0;
     }
 
     .additions__item-desc {
         padding: 0 4rem 4rem 4rem;
-        font-size: 3.7rem;
+        font-size: 4.4rem;
         line-height: 6rem;
     }
 
@@ -184,11 +184,11 @@ img.additions__item-image {
 
 
     .additions__item-bp {
-        font-size: 3.01rem;
+        font-size: 3.5rem;
     }
 
     .additions__item-p {
-        font-size: 4.7rem;
+        font-size: 5rem;
         line-height: 4.4rem;
     }
 
@@ -206,8 +206,9 @@ img.additions__item-image {
     }
 
     .additions__item-cart {
-        width: 8.4rem;
-        height: 6.5rem;
+        font-size: 3.3rem;
+        width: 19.4rem;
+        height: 7.5rem;
         margin: 0 2rem 2rem 0;
     }
 }

@@ -45,7 +45,8 @@
 
 @media (max-width: 1080px) {
     .sale-countdown {
-        font-size: .13rem;
+        font-size: .19rem;
+        padding: 30em 10em 30em 10em;
     }
 }
 

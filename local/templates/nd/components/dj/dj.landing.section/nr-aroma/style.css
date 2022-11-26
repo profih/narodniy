@@ -95,16 +95,25 @@
 
     .aroma__feature.fenix-bullet {
         margin-bottom: 5.7rem;
-        font-size: 4rem;
+        font-size: 4.4rem;
+        font-weight: 500;
     }
 
     .aroma__container {
-        padding: 17.3rem 3.3rem;
+        padding: 16.3rem 4.3rem;
         display: block;
     }
 
     .aroma__title {
         margin: 0 0 11rem 0;
+	}
+    .aroma__title.st-font {
+        font-size: 8.3rem;
+        line-height: 9rem;
     }
+
+    .aroma__images-wrapper {
+        grid-template-rows: 212em 212em 206em;
+}
 
 }

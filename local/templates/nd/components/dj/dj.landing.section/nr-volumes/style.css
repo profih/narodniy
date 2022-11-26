@@ -57,7 +57,7 @@
 
 @media (max-width: 1080px) {
     .volumes__container {
-        padding: 22.5rem 4.2rem 27.2rem 4.2rem;
+        padding: 15rem 4.2rem 15rem 4.2rem;
         grid-template-columns: 1fr 1fr;
         grid-auto-flow: column;
     }
@@ -76,30 +76,30 @@
     .volumes__image-container {
         grid-row: 2;
         /* grid-column: span 1; */
-        font-size: 4rem;
+        font-size: 4.4rem;
     }
 
     .volumes__bp {
-        font-size: 2.9rem;
+        font-size: 4.4rem;
         line-height: normal;
     }
 
     .volumes__p {
-        font-size: 4.5rem;
-        line-height: 3.5rem;
+        font-size: 8rem;
+        line-height: 8rem;
     }
 
     .volumes__feature.fenix-bullet {
         width: auto;
         margin-bottom: 4.5rem;
         line-height: normal;
-        font-size: 3.4rem;
+        font-size: 4.4rem;
     }
 
     .volumes__features {
         padding: 0;
         margin-top: 11.5rem;
-        font-size: 4rem;
+        font-size: 4.4rem;
     }
 
     .volumes__image.volume-20 {

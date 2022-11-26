@@ -40,16 +40,7 @@
     font-size: 26px;
 }
 
-.main__features div {
-
-    font-weight: 500;
-
-    font-size: 24px;
-
-    line-height: 40px;
-
-    margin-bottom: 22px;
-}
+.main__features div {font-weight: 500;font-size: 24px;line-height: 34px;margin-bottom: 19px;}
 
 .main__video {
     grid-column: 1;
@@ -99,7 +90,7 @@
 
 .main__features {
     margin: 0;
-    padding: 20px 67px 0 31px;
+    padding: 20px 67px 60px 31px;
     background-color: rgba(255, 255, 255, .7);
     width: 493px;
     box-sizing: border-box;
@@ -199,11 +190,12 @@
     width: 95px;
     height: 43px;
     background-image: url("/images/svg/video_icon.svg");
+    cursor: pointer;
 }
 
 @media (max-width: 1080px) {
     .main {
-        height: 211rem;
+        height: 245rem;
         background-size: cover;
         display: flex;
         margin-top: -26rem;
@@ -215,7 +207,7 @@
         display: grid;
         /* margin: -26.8rem auto 0 auto; */
         margin: 0!important;
-        grid-template-columns: 1fr 39rem;
+        grid-template-columns: 1fr 44rem;
         height: auto;
         /* background-size: cover; */
         padding-top: 25.8rem;
@@ -243,8 +235,8 @@
     }
 
     .main__features div {
-        font-size: 3.2rem;
-        line-height: 6rem;
+        font-size: 4.4rem;
+        line-height: 5.5rem;
     }
 
     .main__video {
@@ -278,7 +270,7 @@
 
     .main__title-comment {
         font-size: 4.4rem;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 5rem;
     }
 
@@ -295,7 +287,7 @@
         grid-row: 5;
         grid-column: 1/3;
         color: white;
-        height: 63rem;
+        height: 77rem;
         width: 85rem;
     }
 
@@ -312,18 +304,18 @@
     }
 
     .main__video-name {
-        font-size: 3.9rem;
+        font-size: 4rem;
     }
 
     .main__video-icon {
-        width: 12.6rem;
-        height: 5.7rem;
+        width: 23.8rem;
+        height: 11rem;
         background-position: center;
         background-size: contain;
     }
 
     .main__sale {
-        padding: 4.8rem 4.7rem 4.6rem 3.5rem;
+        padding: 4.8rem 4rem 4.6rem 3.5rem;
         row-gap: 4rem;
         text-align: right;
     }
@@ -333,40 +325,40 @@
     }
 
     .main__sale-conditions {
-        font-size: 3.7rem;
+        font-size: 4.4rem;
         line-height: 6rem;
         color: white;
         font-weight: 500;
     }
 
     .main__sale-date {
-        font-size: 3.8rem;
+        font-size: 4.4rem;
     }
 
     .main__sale-price {
-        font-size: 3.5rem;
+        font-size: 4.4rem;
     }
 
     .main__sale-price b {
-        font-size: 6.1rem;
+        font-size: 7.4rem;
         line-height: 7rem;
         font-weight: 800;
     }
 
     .main__sale-action {
         font-weight: 900;
-        font-size: 3.7rem;
-        line-height: 6rem;
+        font-size: 4.4rem;
+        line-height: 10rem;
         color: var(--fenix-main-color);
         padding: 1rem 4rem;
         display: block;
         background-color: white;
-        border-radius: 5.2rem;
+        border-radius: 6rem;
         text-transform: uppercase;
     }
 
     .main__sale-bonus {
-        font-size: 3.7rem;
+        font-size: 4.4rem;
         line-height: 4rem;
     }
 }

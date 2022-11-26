@@ -161,7 +161,7 @@ li.parts__item:before {
 @media (max-width: 1080px) {
     .parts__container {
         display: block;
-        padding: 20.2rem 0 0 5.9rem;
+        padding: 18rem 0 6rem 5.9rem;
     }
 
     .parts__title {
@@ -171,6 +171,7 @@ li.parts__item:before {
     .parts__comment {
         font-size: 4.4rem;
         line-height: 5.9rem;
+        font-weight: 500;
 
     }
 

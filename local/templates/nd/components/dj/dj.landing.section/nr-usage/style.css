@@ -37,25 +37,36 @@
     }
 
     .usage__container {
-        padding: 19.2rem 5.3rem;
-        display: block;
+        padding: 15rem 4.2rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 0;
     }
 
     .usage__image {
         width: 52.3rem;
         height: 66.7rem;
-        float: right;
-        position: relative;
-        top: 11rem;
+        margin: 4rem 0 0 20rem;
+        grid-row: 3;
     }
 
     .usage__order {
         margin: 5rem 0 0 0;
+        grid-column: 2;
+        row-gap: 15px;
+        display: grid;
     }
 
     .usage__point.fenix-bullet {
-        margin-bottom: 4.3rem;
-        font-size: 4rem;
+        margin-bottom: 0;
+        font-size: 4.4rem;
         line-height: 5.3rem;
     }
+
+    .usage__title {
+        grid-column: 2;
+    }
+
 }

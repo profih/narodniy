@@ -32,7 +32,7 @@
 @media (max-width: 1080px) {
 
     .compact__container {
-        padding: 22.2rem 5.3rem 15.3rem 5.3rem;
+        padding: 19rem 5rem 14rem 5rem;
         display: block;
     }
 
@@ -41,7 +41,7 @@
     }
 
     .compact__text {
-        font-size: 4rem;
+        font-size: 4.4rem;
         line-height: 5.8rem;
         margin: 6rem 0;
     }
