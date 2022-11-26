@@ -18,9 +18,10 @@
         <div class="main__features">
             <div class="fenix-bullet">самогон и спирт до&nbsp<span style="color: var(--fenix-main-color)"> 85˚</span></div>
             <div class="fenix-bullet">экономия воды и энергии</div>
+            <div class="fenix-bullet">работает на всех видах плит</div>
             <div class="fenix-bullet">нержавеющая сталь AISI 304</div>
-            <div class="fenix-bullet">универсальный аппарат для&nbspподключения колонны</div>
-            <div class="fenix-bullet">дефлегматор и холодильник</div>
+            <div class="fenix-bullet">уникальный аппарат с тройной&nbspстепенью очисткой </div>
+            <div class="fenix-bullet">встроенный дефлегматор</div>
         </div>
         <div class="main__video" id="narodniy-video">
             <div class="main__video-name">Видео</div>
