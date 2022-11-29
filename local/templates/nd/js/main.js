@@ -27,6 +27,20 @@ $(document).ready(function () {
         scrollPoint = window.scrollY
     });
 
+
+    $('#messages-submit').on('click', function (e) {
+        if (!checkPhone($('#messages-phone').val())) {
+            let error_msg = 'Введите телефон в верном формате'
+            showErrorMsg( $('#messages-phone'), error_msg)
+            return
+        }
+        showThanksPopup();
+    });
+
+    $('#action-callback').on('click', function (e) {
+        showCallbackPopup()
+    });
+
     $(window).scroll(function (event) {
         if (window.scrollY > scrollPoint) {
             if (window.scrollY - scrollPoint > 1000) {
@@ -58,7 +72,7 @@ function sendMail(template, data) {
         data: mail_data,
         success: function (data) {
             hide("all")
-            ym(91301267,'reachGoal','zakaz')
+            ym(91301267, 'reachGoal', 'zakaz')
 
             showThanksPopup()
         }
@@ -69,7 +83,7 @@ function formatNumber(int) {
     return int.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
 
-function showErrorMsg(input, text){
+function showErrorMsg(input, text) {
     let error_msg = $(`<div class="error-msg">${text}</div>`)
     $(input[0].parentNode).append(error_msg)
     error_msg.onTop(input)
@@ -84,19 +98,8 @@ $.fn.center = function () {
     } else {
         this.css("top", 0);
     }
-    this.css("left", ($(window).width() / 2 - this.outerWidth()/ 2) + "px");
+    this.css("left", ($(window).width() / 2 - this.outerWidth() / 2) + "px");
 
-    return this;
-}
-
-$.fn.onTop = function (jq) {
-    this.css("position", "absolute");
-    this.css('box-sizing', 'border-box')
-    this.css('width', jq.outerWidth() + 'px')
-    let top = jq.offset().top - this.outerHeight()
-    let left = jq.offset().left
-    this.css("left", left + "px");
-    this.css("top", top + "px");
     return this;
 }
 
@@ -201,7 +204,7 @@ const basket = {
         $('.order__bp').html(`${formatNumber(sum_base)}&nbsp;р`)
     },
 
-    getSum: function (){
+    getSum: function () {
         return Object.values(this.items).reduce((a, b) => {
             return a + b.price * b.quantity
         }, 0)
@@ -248,7 +251,30 @@ const basket = {
     }
 }
 
-function showThanksPopup(){
+
+$('#callback-post').on('submit', function (event) {
+    event.preventDefault()
+    let phone_jq = $('#phone-callback')
+    if (!checkPhone(phone_jq.val())) {
+        let error_msg = 'Введите телефон в верном формате'
+        showErrorMsg(phone_jq, error_msg)
+        return
+    }
+    let data = {
+        cart: [],
+        phone: phone_jq.val(),
+        name: $('#name-callback').val(),
+        email: $('#email-callback').val(),
+    }
+    data = JSON.stringify(data)
+    sendMail('callback',
+        {
+            data
+        }
+    )
+})
+
+function showThanksPopup() {
     let popup_window = $(".order__thanks")
     popup_window.css('display', 'block')
     popup_window.center()
@@ -257,9 +283,18 @@ function showThanksPopup(){
     }, 500)
 }
 
-function showVideoPopup(){
+function showVideoPopup() {
     hide('all')
     let popup_window = $("#video-popup")
+    popup_window.css('display', 'block')
+    popup_window.center()
+    setTimeout(function () {
+        $(document).on('click', hide)
+    }, 500)
+}
+
+function showCallbackPopup() {
+    let popup_window = $(".order__callback")
     popup_window.css('display', 'block')
     popup_window.center()
     setTimeout(function () {
