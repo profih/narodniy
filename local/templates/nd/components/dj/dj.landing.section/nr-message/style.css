@@ -4,9 +4,9 @@
 
 .messages__container {
     padding: 90px 0;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--fenix-main-color);
-    font-weight: 300;
+    font-weight: 400;
     display: grid;
     grid-template-columns: 1fr 577px;
     gap: 23px;
@@ -101,7 +101,7 @@
     .messages__container {
         text-align: center;
         padding: 16rem 0;
-        font-size: 4rem;
+        font-size: 4.4rem;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
