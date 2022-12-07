@@ -35,8 +35,8 @@ class DJPrices
             ['UF_NAME' => $rnPrice['name'],
                 'UF_ARTNUMBER' => $rnPrice['article'],
                 'UF_ELEMENT_ID' => $rnPrice['ID'],
-                'UF_PRICE_1C' => $rnPrice['price'],
-                'UF_BASE_PRICE_1' => roundUpToAny($rnPrice['price'] * 1.2, 50)]
+                'UF_PRICE_1C' => (int)roundUpToAny($rnPrice['price'], 100) - 10,
+                'UF_BASE_PRICE_1' => (int)roundUpToAny($rnPrice['price'] * 1.25, 50)]
         );
     }
 
@@ -51,8 +51,8 @@ class DJPrices
             ['UF_NAME' => $rnPrice['name'],
                 'UF_ARTNUMBER' => $rnPrice['article'],
                 'UF_ELEMENT_ID' => $rnPrice['ID'],
-                'UF_PRICE_1C' => (int)$rnPrice['price'],
-                'UF_BASE_PRICE_1' => roundUpToAny($rnPrice['price'] * 1.2, 50)]
+                'UF_PRICE_1C' => (int)roundUpToAny($rnPrice['price'], 100) - 10,
+                'UF_BASE_PRICE_1' => roundUpToAny($rnPrice['price'] * 1.25, 50)]
         );
     }
 
