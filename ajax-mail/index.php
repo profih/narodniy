@@ -32,11 +32,28 @@ use DJScripts\Bitrix24;
 
 $bx = new Bitrix24(9623667395, false, 'Новый запрос Народный', false);
 
-if ($_POST['template'] === 'tinkoff') {
+if ($_POST['template'] === 'poll') {
+    $data = json_decode($_POST['data'], true);
+    $message = "Имя " . $data['name'];
+    $message .= "\nТелефон: " . $data['phone'];
+    $message .= "\nПочта: " . $data['email'];
+    foreach ($data['poll'] as $question => $answer) {
+        $message .= "\n - " . $question . "\n";
+        $message .= " - " . $answer . "\n";
+    }
+    mail('narodniy@feniks-opt.ru', 'Пройденный опрос (Народный)', $message);
+    $bx -> createCallbackLead($_POST['phone'], "Пройденный опрос (Народный)\n" . $message, "Пройденный опрос (Народный)", $_POST['name'], $city);
+}else if ($_POST['template'] === 'tinkoff') {
     $message = "Имя " . $_POST['name'];
     $message .= "\nТелефон: " . $_POST['phone'];
     mail('narodniy@feniks-opt.ru', 'Заявка на рассрочку tinkoff (Народный)', $message);
     $bx -> createCallbackLead($_POST['phone'], 'Заявка на рассрочку tinkoff (Народный)', 'Заявка на рассрочку tinkoff (Народный)', $_POST['name'], $city);
+}else if ($_POST['template'] === 'callback') {
+    $message = "Имя " . $_POST['name'];
+    $message .= "\nТелефон: " . $_POST['phone'];
+    $message .= "\nПочта: " . $_POST['email'];
+    mail('narodniy@feniks-opt.ru', 'Заявка на обратный звонок (Народный)', $message);
+    $bx -> createCallbackLead($_POST['phone'], 'Заявка на обратный звонок (Народный)', 'Заявка на обратный звонок (Народный)', $_POST['name'], $city);
 }else if ($_POST['template'] === 'order') {
     $data = json_decode($_POST['data'], true);
     $message = 'Новый заказ!
