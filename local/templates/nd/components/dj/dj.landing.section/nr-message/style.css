@@ -87,6 +87,54 @@
     background-color: white;
 }
 
+/*-------------------------------*/
+
+.order__callback.pop {
+    background-color: white;
+    padding: 50px 100px;
+    border-radius: 30px;
+    border: 1px solid var(--fenix-main-color);
+    z-index: 20;
+    /* width: 800px; */
+    /* height: 600px; */
+}
+
+img.order__callback-image {
+    width: 423px;
+    height: 380px;
+    grid-row: span 4;
+    margin-left: 70px;
+    grid-column: 1;
+}
+
+form#callback-post {}
+
+form#\#callback-post {
+    display: grid;
+    grid-template-columns: 500px 492px;
+    column-gap: 83px;
+    row-gap: 34px;
+}
+
+.order__callback .order__input {
+    height: 62px;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 0;
+}
+
+.order__callback .order__popup-button {
+    width: 254px;
+    height: 62px;
+    border-radius: 30px;
+    justify-self: end;
+}
+
+.order__callback .order__popup-title {
+    font-size: 30px;
+}
+
 @media (max-width: 1080px) {
     .fixed-action-button {
         font-size: 3rem;
@@ -137,9 +185,51 @@
     }
 
     .messages__icon {
-
         width: 13rem;
         height: 13rem;
+    }
+
+
+    .order__callback.pop {
+        background-color: white;
+        padding: 10rem 7rem 7rem 7rem;
+        border-radius: 3rem;
+        border: 1px solid var(--fenix-main-color);
+        z-index: 20;
+        overflow: scroll;
+        max-height: 90vh;
+    }
+
+    img.order__callback-image {
+        width: 50rem;
+        height: 42rem;
+        margin-left: 0;
+    }
+
+    form#\#callback-post {
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 8rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .order__callback .order__input {
+        height: 8rem;
+        font-size: 3rem;
+        padding: 1rem 5rem;
+    }
+
+    .order__callback .order__popup-button {
+        width: 35rem;
+        height: 8.5rem;
+        border-radius: 4rem;
+        margin: 0;
+    }
+
+    .order__callback .order__popup-title {
+        font-size: 4.7rem;
+        margin: 0;
     }
 
 

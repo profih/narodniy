@@ -33,5 +33,5 @@ formatImage(
 $arResult['IMAGES'][3] = $component->
 formatImage(
     $arParams['IMAGE_PRESENTS'],
-    array('width' => 250, 'height' => 190),
-    array('width' => 250, 'height' => 190));
+    array('width' => 600, 'height' => 600),
+    array('width' => 600, 'height' => 600));

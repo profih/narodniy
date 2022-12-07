@@ -11,13 +11,13 @@
 ?>
 <section class="aroma" id="aroma">
     <div class="aroma__container centered-container">
-        <div class="aroma__title st-font">Сухопарник-аромакорзина!</div>
+        <div class="aroma__title st-font">Правильный выбор!<br>Сухопарник-аромакорзина!</div>
         <div class="aroma__features">
-            <div class="aroma__feature fenix-bullet">ароматный самогон в процессе перегона</div>
-            <div class="aroma__feature fenix-bullet">удобный сухопарник с аромакорзиной!</div>
-            <div class="aroma__feature fenix-bullet">используйте травы, пряности или цедру для ароматизации конечного продукта</div>
-            <div class="aroma__feature fenix-bullet">удобно засыпать во время перегонки</div>
-            <div class="aroma__feature fenix-bullet">удобная ручка на джин-корзине</div>
+            <div class="aroma__feature fenix-bullet">Вкусный самогон в процессе перегона</div>
+            <div class="aroma__feature fenix-bullet">Удобный сухопарник с аромакорзиной!</div>
+            <div class="aroma__feature fenix-bullet">Используйте травы, пряности или цедру для ароматизации конечного продукта</div>
+            <div class="aroma__feature fenix-bullet">Удобно засыпать во время перегонки</div>
+            <div class="aroma__feature fenix-bullet">Удобная ручка на джин корзине</div>
         </div>
         <div class="aroma__images-wrapper">
             <div class="aroma__image-wrapper aroma__image-neg">

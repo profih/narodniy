@@ -12,7 +12,7 @@
 <section id="presents" class="presents">
     <div class="present__container centered-container">
         <h2 class="presents__title">Подарки!</h2>
-        <div class="presents__comment">нашим уважаемым покупателям!</div>
+        <div class="presents__comment">при оформлении заказа сегодня!</div>
         <? foreach ($arResult['ITEMS'] as $item): ?>
             <div class="presents__item">
                 <div class="presents__picture-wrapper">
@@ -27,6 +27,9 @@
         <div class="presents__item presents__item--bonus">
             <img title="Бонусный сертификат" src="/images/svg/present_bonus.svg">
         </div>
+        <div class="presents__item presents__item--bonus">
+            <img title="Бесплатная доставка" src="/images/svg/shipment.svg">
+        </div>
         <div class="presents__discount">
             <div class="presents__discount-text">Ваша экономия</div>
             <div class="presents__discount-price"><b><?
@@ -34,7 +37,7 @@
                         return $carry + $item['UF_PRICE_1C'];
                     }
                     );
-                    echo number_format($sum, 0, '.', '&nbsp');
+                    echo number_format($sum + 1500, 0, '.', '&nbsp');
                     ?></b>р
             </div>
             <div class="presents__discount-zero"><b>= 0</b> рублей</div>

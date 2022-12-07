@@ -48,8 +48,8 @@
             <li class="parts__item">кран на сухопарник</li>
         </ol>
         <div class="parts__presents">
-            <img src="" alt="Подарки" class="parts__present">
-            <span class="parts__comment">+ Подарки</span>
+            <img loading="lazy" src="<?=$arResult['IMAGES'][3]?>" alt="Подарки" class="parts__presents-image">
+            <span class="parts__presents-text">+ Подарки</span>
         </div>
     </div>
 </section>

@@ -21,3 +21,8 @@ foreach (
         array('width' => 220, 'height'=>220),
         array('width' => 220, 'height'=>220));
 }
+
+$arResult['IMAGES'][] = $component ->
+formatImage($arParams['IMAGE_RECEIPTS'],
+    array('width' => 400, 'height'=>300),
+    array('width' => 800, 'height'=>600));

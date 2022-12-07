@@ -13,26 +13,25 @@
 <section class="purification" id="purification">
     <div class="purification__container centered-container">
         <div class="purification__title st-font">Единственный аппарат с тройной степенью очистки</div>
-        <div class="purification__text">
-            <span class="purification__calc">Сетка Панченкова + Дефлегматор + Сухопарник</span>
-            <span class="purification__result">= ТРОЙНАЯ очистка</span>
-        </div>
+        <ol class="purification__parts">
+            <li class="purification__parts-item">Сетка панченкова</li>
+            <li class="purification__parts-item">Встроенный дефлегматор</li>
+            <li class="purification__parts-item">Сухопарник-аромакорзина</li>
+
+        </ol>
         <div class="purification__images-wrapper">
             <div class="purification__image-main-wrapper">
                 <img loading="lazy" src="<?= $arResult['IMAGE_MAIN'] ?>" alt="Самогонный аппарат Народный"
                      class="purification__image-main">
             </div>
-            <div class="purification__image-wrapper purification__image-wrapper--left">
-                <img loading="lazy" src="<?= $arResult['IMAGES'][0] ?>" alt="Сухопарник" class="purification__image">
-            </div>
-            <div class="purification__image-wrapper purification__image-wrapper--left">
-                <img loading="lazy" src="<?= $arResult['IMAGES'][1] ?>" alt="Холодильник" class="purification__image">
-            </div>
-            <div class="purification__image-wrapper purification__image-wrapper--right">
-                <img loading="lazy" src="<?= $arResult['IMAGES'][2] ?>" alt="Дефлегматор" class="purification__image">
-            </div>
-            <div class="purification__image-wrapper purification__image-wrapper--right">
+            <div class="purification__image-wrapper">
                 <img loading="lazy" src="<?= $arResult['IMAGES'][3] ?>" alt="РПН" class="purification__image">
+            </div>
+
+            <div class="purification__image-wrapper">
+                <img loading="lazy" src="<?= $arResult['IMAGES'][2] ?>" alt="Дефлегматор" class="purification__image">
+            </div>   <div class="purification__image-wrapper">
+                <img loading="lazy" src="<?= $arResult['IMAGES'][0] ?>" alt="Сухопарник" class="purification__image">
             </div>
         </div>
     </div>

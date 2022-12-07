@@ -12,7 +12,7 @@
 <section class="sale" id="sale">
     <div class="sale__container centered-container">
         <span class="sale__title">Акция!</span>
-        <span class="sale__conditions">при заказе до 30 ноября</span>
+        <span class="sale__conditions">при заказе до 30 декабря</span>
         <span class="sale__digits"><b>-20</b>%</span>
         <div class="sale__prices">
             <span class="sale__base-price"><?=number_format($GLOBALS['base_price-20'], 0, '.', '&nbsp')?>р</span>

@@ -28,7 +28,7 @@
     background-color: var(--fenix-main-color-20);
     height: 29px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -62,6 +62,7 @@ h2.presents__title {
     width: 370px;
     box-sizing: border-box;
     margin-bottom: 10px;
+    align-self: baseline;
 }
 
 .presents__discount-text {
@@ -74,6 +75,7 @@ h2.presents__title {
     font-size: 25px;
     line-height: 50px;
     text-decoration: line-through;
+    display: inline;
 }
 
 .presents__discount-price b {
@@ -87,6 +89,7 @@ h2.presents__title {
 .presents__discount-zero {
     font-weight: 400;
     font-size: 25px;
+    display: inline;
 }
 
 .presents__discount-zero b {
@@ -110,6 +113,9 @@ h2.presents__title {
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
+    position: absolute;
+    right: 63px;
+    top: 493px;
 }
 
 .present__container {
@@ -117,6 +123,7 @@ h2.presents__title {
     flex-flow: row wrap;
     gap: 18px;
     align-items: flex-end;
+    position: relative;
 }
 
 .presents__item--bonus {
@@ -141,8 +148,9 @@ h2.presents__title {
 
     .presents__item {
         width: 40rem;
+        font-size: 2rem;
         line-height: 3.2rem;
-        justify-content: space-between;
+        justify-content: center;
         height: 37rem;
     }
 
@@ -208,6 +216,7 @@ h2.presents__title {
         background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 20%, rgb(255 77 77 / 0%));
         box-shadow: inset 2px 2px 3px rgb(255 255 255 / 60%), inset -2px -2px 5px rgb(0 0 0 / 60%);
         text-shadow: 1px 1px 1px #8d8d8d;
+        position: static;
     }
 
     .present__container {

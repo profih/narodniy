@@ -13,6 +13,7 @@ $component = $this -> getComponent();
 foreach (
     [
         $arParams['IMAGE'],
+        $arParams['IMAGE_POPUP'],
     ] as $key => $value) {
     $arResult['IMAGES'][$key] = $component ->
     formatImage($value,

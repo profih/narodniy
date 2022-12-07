@@ -40,3 +40,13 @@ $arTemplateParameters['IMAGE_WHISKY'] = array(
     "FD_USE_MEDIALIB" => true,
     "FD_MEDIALIB_TYPES" => Array('image')
 );
+
+$arTemplateParameters['IMAGE_RECEIPTS'] = array(
+    "NAME" => 'Рецепты',
+    "TYPE" => "FILE",
+    "FD_TARGET" => "F",
+    "FD_EXT" => array('png', 'jpg', 'jpeg', 'gif'),
+    "FD_UPLOAD" => true,
+    "FD_USE_MEDIALIB" => true,
+    "FD_MEDIALIB_TYPES" => Array('image')
+);

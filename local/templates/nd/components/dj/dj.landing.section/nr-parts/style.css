@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 588px 1fr;
     padding: 74px 0 46px 0;
+    position: relative;
 }
 
 .parts__title {
@@ -47,7 +48,39 @@ li.parts__item:before {
 }
 
 .parts__presents {
-    display: none;
+    position: absolute;
+    top: 420em;
+    right: -43em;
+    font-size: 1px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img.parts__presents-image {
+    width: 246em;
+    height: 190em;
+    margin-bottom:  20em;
+}
+
+.parts__presents:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-image: url('/images/svg/presents_frame.svg');
+    width: 258em;
+    height: 52em;
+    top: 160em;
+    left: -3em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+span.parts__presents-text {
+    font-size: 35em;
+    font-weight: 900;
+    color: var(--fenix-pink-color);
 }
 
 .parts__images-wrapper {
@@ -159,9 +192,31 @@ li.parts__item:before {
 
 
 @media (max-width: 1080px) {
+
+    .parts__presents {
+        position: relative;
+        top: 0;
+        font-size: .23rem;
+        background-color: var(--fenix-pink-color);
+        height: 80rem;
+        width: 100rem;
+        left: -6rem;
+    }
+
+    .parts__presents:after {
+        background-image: url('/images/svg/presents_frame_white.svg');
+        top: 209em;
+        left: 88em;
+        backdrop-filter: inherit;
+    }
+
+    span.parts__presents-text {
+        color: white;
+    }
+
     .parts__container {
         display: block;
-        padding: 18rem 0 6rem 5.9rem;
+        padding: 18rem 0 0 5.9rem;
     }
 
     .parts__title {
@@ -180,7 +235,7 @@ li.parts__item:before {
     }
 
     li.parts__item {
-        font-size: 4rem;
+        font-size: 4.4rem;
         margin-bottom: 4.2rem;
         margin-left: 4rem;
     }
@@ -206,4 +261,21 @@ li.parts__item:before {
         top: 35rem;
         left: 4rem;
     }
+
+    .parts__number {
+        font-size: 30em;
+    }
+
+    .parts__number--1 {left: 0; top: 5em;}
+    .parts__number--2 {left: 3em; top: 9em;}
+    .parts__number--3 {left: 10em; top: 9.5em;}
+    .parts__number--4 {left: 4.5em; top: 1.5em;}
+    .parts__number--5 {left: 4.5em; top: -1em;}
+    .parts__number--6 {left: 2em; top: 2em;}
+    .parts__number--7 {left: 13em; top: 6em;}
+    .parts__number--8 {left: 10em; top: 3.5em;}
+    .parts__number--9 {left: 11em; top: 6em;}
+    .parts__number--10 {left: 9em; top: 1em;}
+    .parts__number--11 {left: 8em; top: 6em;}
+
 }

@@ -14,17 +14,8 @@
         <div class="receipts__title st-font">Элитные напитки пропали?<br> Ничего страшного!</div>
         <div class="receipts__comment">Бурбон, виски, ром и многое другое - вы можете сделать сами, намного дешевле!
         </div>
-        <div class="receipts__drinks">
-            <div class="receipts__drink fenix-bullet">водка</div>
-            <div class="receipts__drink fenix-bullet">джин</div>
-            <div class="receipts__drink fenix-bullet">бальзам</div>
-            <div class="receipts__drink fenix-bullet">самогон</div>
-            <div class="receipts__drink fenix-bullet">спирт</div>
-            <div class="receipts__drink fenix-bullet">коньяк</div>
-            <div class="receipts__drink fenix-bullet">виски</div>
-            <div class="receipts__drink fenix-bullet">ром</div>
-            <div class="receipts__drink fenix-bullet">бренди</div>
-            <div class="receipts__drink fenix-bullet">настойка</div>
+        <div class="receipts__image-wrapper">
+            <img loading="lazy" src="<?=$arResult['IMAGES'][4]?>" alt="Рецепты" class="receipts__image-main">
         </div>
         <div class="receipts__table">
             <div class="receipts__receipt receipts__receipt--head desktop">

@@ -34,21 +34,14 @@
         </div>
         <a class="order__action">Оформить</a>
     </div>
-    <div class="order__callback pop" style="display:none;">
-        <form method="post" id="#callback-post">
-            <p class="order__popup-title">Ваши данные для обратной связи:</p>
-            <input class="order__input tel-mask" type="tel" required placeholder="Тел.:" id="phone-callback">
-            <button value="Отправить" class="order__popup-button">отправить</button>
-        </form>
-    </div>
-    <div class="order__popup pop" style="display:none;">
+    <div class="order__popup fenix__popup pop" style="display:none;">
         <form method="post" id="order-post">
             <p class="order__popup-title">Ваши данные для подтверждения заказа:</p>
             <input class="order__input tel-mask" type="tel" required placeholder="Тел.:" id="phone">
-            <button value="Отправить" class="order__popup-button">отправить</button>
+            <button value="Отправить" class="order__popup-button fenix__button">отправить</button>
         </form>
     </div>
-    <div class="order__thanks pop" style="display:none;">
+    <div class="order__thanks fenix__popup pop" style="display:none;">
             <p class="order__popup-title">Спасибо за Ваш заказ!</p>
         <p class="order__popup-text">Ваш менеджер спешит подготовить для вас самое лучшее предложение!</p>
         <p class="order__popup-text">Как только он все согласует сразу Вам позвонит!</p>
