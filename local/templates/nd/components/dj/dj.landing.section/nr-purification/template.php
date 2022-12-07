@@ -14,7 +14,7 @@
     <div class="purification__container centered-container">
         <div class="purification__title st-font">Единственный аппарат с тройной степенью очистки</div>
         <ol class="purification__parts">
-            <li class="purification__parts-item">Сетка панченкова</li>
+            <li class="purification__parts-item">Сетка Панченкова</li>
             <li class="purification__parts-item">Встроенный дефлегматор</li>
             <li class="purification__parts-item">Сухопарник-аромакорзина</li>
 
