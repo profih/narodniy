@@ -1,0 +1,130 @@
+.videos__container.centered-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 80px 0;
+    gap: 50px;
+    /* background-color: var(--fenix-main-color); */
+}
+
+.videos__main-wrapper {
+    width: 800px;
+    height: 500px;
+}
+
+.videos-block {
+    width: 100%;
+    height: 100%;
+}
+
+.videosWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.videos__additional-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 70px;
+}
+
+.videos__additional-wrapper .videos-block {
+    width: 500px;
+    height: 280px;
+}
+
+span.videos__main-text {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    margin: 20px 50px;
+}
+
+section#videos {
+    background-color: var(--fenix-main-color);
+}
+
+span.videos__additional-text {
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 50px;
+}
+
+@media (max-width: 1080px) {
+    .videos__container.centered-container {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        padding: 10rem;
+        gap: 8rem;
+        /* background-color: var(--fenix-main-color); */
+    }
+
+    .videos__main-wrapper {
+        width: 100rem;
+        height: 60rem;
+    }
+
+    .videos-block {
+        width: 100%;
+        height: 100%;
+    }
+
+    .videosWrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .videos__additional-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        row-gap: 4rem;
+    }
+
+    .videos__additional-wrapper .videos-block {
+        width: 100rem;
+        height: 60rem;
+    }
+
+    span.videos__main-text {
+        font-size: 4.3rem;
+        /* text-align: center; */
+        /* font-weight: 900; */
+        /* color: white; */
+        margin: 3rem;
+    }
+
+    section#videos {
+        background-color: var(--fenix-main-color);
+    }
+
+    span.videos__additional-text {
+        color: white;
+        font-weight: 900;
+        font-size: 3rem;
+        text-align: center;
+        margin: 5rem;
+    }
+
+    .videos__additional-wrapper .videos-block {
+        width: 100rem;
+        height: 60rem;
+    }
+}
