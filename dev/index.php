@@ -20,16 +20,33 @@ $APPLICATION->IncludeComponent(
 );?>
 <?
 $APPLICATION->IncludeComponent(
-	"dj:dj.landing.section", 
-	"nr-features", 
-	array(
-		"COMPONENT_TEMPLATE" => "nr-features",
-		"IMAGE_1" => "/upload/medialibrary/438/prj05r0qu9sy4gc8dxgm9a5v4ir8ckqj/steel.png",
-		"IMAGE_2" => "/upload/medialibrary/b77/6j12ha0docssljci6wmr86iqodrgdcpq/warranty.png",
-		"IMAGE_3" => "/upload/medialibrary/79c/rgnqsqqcuntzoh8z4rkijg33o010secv/time.png",
-		"IMAGE_4" => "/upload/medialibrary/1d6/vbfjkty94hjxx3z1khch013s43oaeqeb/money.png"
-	),
-	false
+    "dj:dj.landing.section",
+    "nr-videos",
+    array(
+        "COMPONENT_TEMPLATE" => "nr-videos",
+    ),
+    false
+);?>
+<?
+$APPLICATION->IncludeComponent(
+    "dj:dj.landing.section",
+    "nr-poll",
+    array(
+        "COMPONENT_TEMPLATE" => "nr-poll",
+    ),
+    false
+);?>
+<?$APPLICATION->IncludeComponent(
+    "dj:dj.landing.section",
+    "nr-parts",
+    array(
+        "COMPONENT_TEMPLATE" => "nr-parts",
+        "IMAGE_CUBE" => "/upload/medialibrary/cdc/23u7uzvhvold8jnpnw4i5q511y3clybj/package_cube.png",
+        "IMAGE_PARTS" => "/upload/medialibrary/cdd/q385i4062n59u6rhtby3jwh4n6gu2lqi/package_complect.png",
+        "IMAGE_PRESENTS" => "/upload/medialibrary/e5c/mkbjxa99f4as7tzt06bz8cqmxjhhg0yf/package_presents.png",
+        "IMAGE_THERMOMETER" => "/upload/medialibrary/600/vsqauaqawu7ad8pkgh5nk6i5pr6xtqt9/Термометр_белый_4см (2) 1.png"
+    ),
+    false
 );?>
 <?
 $APPLICATION->IncludeComponent(
@@ -155,24 +172,26 @@ $APPLICATION->IncludeComponent(
 	false
 );?>
 
-<?$APPLICATION->IncludeComponent(
-	"dj:dj.landing.section", 
-	"nr-parts", 
-	array(
-		"COMPONENT_TEMPLATE" => "nr-parts",
-		"IMAGE_CUBE" => "/upload/medialibrary/cdc/23u7uzvhvold8jnpnw4i5q511y3clybj/package_cube.png",
-		"IMAGE_PARTS" => "/upload/medialibrary/cdd/q385i4062n59u6rhtby3jwh4n6gu2lqi/package_complect.png",
-		"IMAGE_PRESENTS" => "/upload/medialibrary/e5c/mkbjxa99f4as7tzt06bz8cqmxjhhg0yf/package_presents.png",
-		"IMAGE_THERMOMETER" => "/upload/medialibrary/600/vsqauaqawu7ad8pkgh5nk6i5pr6xtqt9/Термометр_белый_4см (2) 1.png"
-	),
-	false
+<?
+$APPLICATION->IncludeComponent(
+    "dj:dj.landing.section",
+    "nr-features",
+    array(
+        "COMPONENT_TEMPLATE" => "nr-features",
+        "IMAGE_1" => "/upload/medialibrary/438/prj05r0qu9sy4gc8dxgm9a5v4ir8ckqj/steel.png",
+        "IMAGE_2" => "/upload/medialibrary/b77/6j12ha0docssljci6wmr86iqodrgdcpq/warranty.png",
+        "IMAGE_3" => "/upload/medialibrary/79c/rgnqsqqcuntzoh8z4rkijg33o010secv/time.png",
+        "IMAGE_4" => "/upload/medialibrary/1d6/vbfjkty94hjxx3z1khch013s43oaeqeb/money.png"
+    ),
+    false
 );?>
 <?$APPLICATION->IncludeComponent(
 	"dj:dj.landing.section", 
 	"nr-message", 
 	array(
 		"COMPONENT_TEMPLATE" => "nr-message",
-		"IMAGE" => "/upload/medialibrary/949/b36jo179oemsxo55r3apmg74va51ewva/Фотопривязка-Комп-Планшет 1.png"
+		"IMAGE" => "/upload/medialibrary/949/b36jo179oemsxo55r3apmg74va51ewva/Фотопривязка-Комп-Планшет 1.png",
+		"IMAGE_POPUP" => "/upload/medialibrary/365/tzjfofy4w5sub3uy8n230emc0wj7ztg9/callback.png"
 	),
 	false
 );?>

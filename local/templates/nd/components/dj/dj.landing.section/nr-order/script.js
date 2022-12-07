@@ -35,9 +35,11 @@ $(document).ready(
 
         $('.order__action').on(
             'click', function (e) {
+                hide('all')
                 let popup_window = $(".order__popup")
-                popup_window.css('display', 'block')
+                popup_window.fadeIn()
                 popup_window.center()
+                popup_window.putCross()
                 setTimeout(function () {
                     $(document).on('click', hide)
                 }, 500)
@@ -66,16 +68,6 @@ $(document).ready(
             data = JSON.stringify(data)
             sendMail('order', {data})
         })
-
-        let parentDom = $(".order__item[data-catalog-id='1']")[0];
-        basket.setItem(
-            parentDom.dataset.catalogId,
-            parentDom.querySelector('.order__item-name').innerText,
-            parseInt(parentDom.querySelector('.order__item-p').innerText.replace(/\D+/g, '')),
-            parseInt(parentDom.querySelector('.order__item-bp').innerText.replace(/\D+/g, '')),
-            1,
-            false
-        )
 
     }
 )

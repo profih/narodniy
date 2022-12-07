@@ -15,7 +15,6 @@ var burger_menu = {
     close: function () {
     }
 }
-
 $(document).ready(function () {
 
     $('.tel-mask').mask('+7(000)000-00-00')
@@ -28,18 +27,46 @@ $(document).ready(function () {
     });
 
 
-    $('#messages-submit').on('click', function (e) {
-        if (!checkPhone($('#messages-phone').val())) {
+    $('#messages-submit').on('click', function (event) {
+        event.preventDefault()
+        let phone_jq = $('#messages-phone')
+        if (!checkPhone(phone_jq.val())) {
             let error_msg = 'Введите телефон в верном формате'
-            showErrorMsg( $('#messages-phone'), error_msg)
+            showErrorMsg(phone_jq, error_msg)
             return
         }
-        showThanksPopup();
+        let data = {
+            phone: phone_jq.val()
+        }
+        data = JSON.stringify(data)
+        sendMail('callback',
+            {data}
+        )
     });
 
     $('#action-callback').on('click', function (e) {
         showCallbackPopup()
     });
+
+
+    $('#callback-post').on('submit', function (event) {
+        event.preventDefault()
+        let phone_jq = $('#phone-callback')
+        if (!checkPhone(phone_jq.val())) {
+            let error_msg = 'Введите телефон в верном формате'
+            showErrorMsg(phone_jq, error_msg)
+            return
+        }
+        let data = {
+            phone: phone_jq.val(),
+            name: $('name-callback').val(),
+            email: $('email-callback').val()
+        }
+        data = JSON.stringify(data)
+        sendMail('callback',
+            {data}
+        )
+    })
 
     $(window).scroll(function (event) {
         if (window.scrollY > scrollPoint) {
@@ -70,10 +97,11 @@ function sendMail(template, data) {
         type: "POST",
         url: '/ajax-mail/',
         data: mail_data,
-        success: function (data) {
+        success: function (response) {
             hide("all")
-            ym(91301267, 'reachGoal', 'zakaz')
+            /*ym(91301267, 'reachGoal', 'zakaz')*/
 
+            console.log(response)
             showThanksPopup()
         }
     });
@@ -112,6 +140,18 @@ $.fn.onTop = function (jq) {
     this.css("left", left + "px");
     this.css("top", top + "px");
     return this;
+}
+
+$.fn.putCross = function (jq) {
+    let cross = $('<i class="popup-close">X</i>')
+    this.append(cross)
+    cross.on('click',
+        function (){
+            let popup = $(".pop")
+            popup.css('display', 'none');
+            $('.popup-close').remove()
+            $(document).off('click', hide)
+        })
 }
 
 const basket = {
@@ -252,32 +292,13 @@ const basket = {
 }
 
 
-$('#callback-post').on('submit', function (event) {
-    event.preventDefault()
-    let phone_jq = $('#phone-callback')
-    if (!checkPhone(phone_jq.val())) {
-        let error_msg = 'Введите телефон в верном формате'
-        showErrorMsg(phone_jq, error_msg)
-        return
-    }
-    let data = {
-        cart: [],
-        phone: phone_jq.val(),
-        name: $('#name-callback').val(),
-        email: $('#email-callback').val(),
-    }
-    data = JSON.stringify(data)
-    sendMail('callback',
-        {
-            data
-        }
-    )
-})
 
 function showThanksPopup() {
+    hide('all')
     let popup_window = $(".order__thanks")
-    popup_window.css('display', 'block')
+    popup_window.fadeIn()
     popup_window.center()
+    popup_window.putCross()
     setTimeout(function () {
         $(document).on('click', hide)
     }, 500)
@@ -286,17 +307,20 @@ function showThanksPopup() {
 function showVideoPopup() {
     hide('all')
     let popup_window = $("#video-popup")
-    popup_window.css('display', 'block')
+    popup_window.fadeIn()
     popup_window.center()
+    popup_window.putCross()
     setTimeout(function () {
         $(document).on('click', hide)
     }, 500)
 }
 
 function showCallbackPopup() {
+    hide('all')
     let popup_window = $(".order__callback")
-    popup_window.css('display', 'block')
+    popup_window.fadeIn()
     popup_window.center()
+    popup_window.putCross()
     setTimeout(function () {
         $(document).on('click', hide)
     }, 500)
@@ -305,7 +329,8 @@ function showCallbackPopup() {
 function hide(e) {
     let popup = $(".pop")
     if (e === 'all' || !popup.is(e.target) && popup.has(e.target).length === 0) {
-        popup.css('display', 'none');
+        popup.fadeOut()
+        $('.popup-close').remove()
+        $(document).off('click', hide)
     }
-    $(document).off('click', hide)
 }
